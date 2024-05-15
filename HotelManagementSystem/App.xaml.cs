@@ -20,7 +20,7 @@ namespace HotelManagementSystem
                         new Reservation(new RoomId(1, 1), "Alex", new DateTime(2020, 2, 19), new DateTime(2020, 2, 27))
                         );
                 TheHotel.MakeReservation(
-                    new Reservation(new RoomId(1, 10), "John", new DateTime(2020, 2, 10), new DateTime(2020, 2, 20))
+                    new Reservation(new RoomId(1, 10), "John", new DateTime(2020, 2, 10), new DateTime(2020, 2, 15))
                     );
             }
             catch (ReservationConflictException ex) {

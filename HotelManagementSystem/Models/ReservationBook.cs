@@ -16,6 +16,8 @@ namespace HotelManagementSystem.Models
             _reservationList = new List<Reservation>();
         }
 
+        public IEnumerable<Reservation> GetAllResevations() => _reservationList;
+
         public IEnumerable<Reservation> GetReservationByUsername(string username) => _reservationList.Where(r => r.UserName == username);
 
         public void AddReservation(Reservation reservation)
